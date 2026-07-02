@@ -58,7 +58,7 @@ async function importProductData(productsData) {
 
   // --- PHASE 2: Import Products in Concurrent Batches ---
   const validItems = productsData.filter(item => item.category && item.subcategory && item.partNumber);
-  const concurrencyLimit = 8; // Process 8 products in parallel at a time
+  const concurrencyLimit = 3; // Process 3 products in parallel at a time (prevents pool exhaustion)
   
   for (let i = 0; i < validItems.length; i += concurrencyLimit) {
     const batch = validItems.slice(i, i + concurrencyLimit);
@@ -102,6 +102,9 @@ async function importProductData(productsData) {
             })),
           });
         }
+      }, {
+        maxWait: 10000, // 10 seconds to wait for a connection in the pool
+        timeout: 15000  // 15 seconds transaction execution timeout
       });
       
       importedCount++;
