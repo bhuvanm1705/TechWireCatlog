@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0F172A;
+  --color-brand-card: #1E293B;
+  --color-brand-border: #334155;
+  --color-brand-textMuted: #94A3B8;
+  --color-brand-textLight: #F8FAFC;
+  --color-brand-accent: #0284C7;
+  --color-brand-accentHover: #0369A1;
+  --color-brand-accentLight: #E0F2FE;
+  --color-brand-success: #10B981;
+  --color-brand-warning: #F59E0B;
+  --color-brand-danger: #EF4444;
+}
+
+body {
+  @apply bg-brand-bg text-brand-textLight font-sans antialiased;
+}
+
+/* Premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-brand-bg;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-border rounded-md;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+
+/* Custom diagonal stripe pattern for empty (unassociated) cells */
+.cell-unassociated {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #1E293B,
+    #1E293B 6px,
+    #0F172A 6px,
+    #0F172A 12px
+  );
+  position: relative;
+}
+
+/* Micro-animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

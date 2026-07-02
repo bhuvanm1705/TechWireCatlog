@@ -1,0 +1,52 @@
+Category,Sub-category,Part No.,Datasheet Link (PDF),"VDSS
+V","VGS
+V","VTH
+Min
+V","VTH
+Max
+V",ID(A) / TA=25,VTH(V) Max.,"Ron 4.5v
+(mΩ)Max.","Ron 10v
+(mΩ)Max.",,
+Polymer Aluminum Solid Electrolytic Capacitors,SOT-723,PART483,https://www.syncpower.com/datasheet/SPN1012.pdf,4,5,,8,8,,,,,A filled cell indicates that the part number is associated with that column.
+Polymer Aluminum Solid Electrolytic Capacitors,SOT-723,PART484,https://www.syncpower.com/datasheet/SPN1012.pdf,3,7,,,,,89,,,An empty cell means the part is not associated with that column.
+Polymer Aluminum Solid Electrolytic Capacitors,SOT-723,PART485,https://www.syncpower.com/datasheet/SPN1012.pdf,4, ,,,,8,,6,,A dash (-) represents an empty cell but signifies an association with that column.
+Polymer Aluminum Solid Electrolytic Capacitors,SOT-723,PART486,https://www.syncpower.com/datasheet/SPN1012.pdf,-,,,,9,,,4,,
+Polymer Aluminum Solid Electrolytic Capacitors,SOP-8,PART487,https://www.syncpower.com/datasheet/SPN1012.pdf,,4,,,,,,3,,
+Polymer Aluminum Solid Electrolytic Capacitors,SOP-8,PART488,https://www.syncpower.com/datasheet/SPN1012.pdf,,2,,58,,,,-,,
+Polymer Aluminum Solid Electrolytic Capacitors,SOP-8,PART489,https://www.syncpower.com/datasheet/SPN1012.pdf,-,2,,,,,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SOP-8,PART490,https://www.syncpower.com/datasheet/SPN1012.pdf,0,,,,,,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SOT-563(SC-89-6L),PART491,https://www.syncpower.com/datasheet/SPN1012.pdf,8,,,,,98,,-,,
+Polymer Aluminum Solid Electrolytic Capacitors,SOT-563(SC-89-6L),PART492,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SOT-563(SC-89-6L),PART493,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,85,,,3,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP1021,PART494,https://www.syncpower.com/datasheet/SPN1012.pdf,,,6,,,-,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP1021,PART495,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,6,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP1021,PART496,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,5,9,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP1021,PART497,https://www.syncpower.com/datasheet/SPN1012.pdf,-,-,,,,,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP1563,PART498,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,-,6,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP1563,PART499,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,3,,6,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP1563,PART500,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,9,-,,6,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP6569,PART501,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP6569,PART502,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP6569,PART503,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Polymer Aluminum Solid Electrolytic Capacitors,SPP6569,PART504,https://www.syncpower.com/datasheet/SPN1012.pdf,6,,,,,,,,,
+Mosfet,MPO86,PART505,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Mosfet,MPO86,PART506,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,-,,,,
+Mosfet,MPO86,PART507,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,6,,-,,,,
+Mosfet,MPO87,PART508,https://www.syncpower.com/datasheet/SPN1012.pdf,,54,,,,-,,,,
+Mosfet,MPO87,PART509,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Mosfet,MPO87,PART510,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Mosfet,MPO87,PART511,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Mosfet,MPO88,PART512,https://www.syncpower.com/datasheet/SPN1012.pdf,,,3,,,,,,,
+Mosfet,MPO88,PART513,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,6,,,,
+Plastic Film Capacitors,PF785,PART514,https://www.syncpower.com/datasheet/SPN1012.pdf,-,,,,,,,,,
+Plastic Film Capacitors,PF785,PART515,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Plastic Film Capacitors,PF785,PART516,https://www.syncpower.com/datasheet/SPN1012.pdf,-,,,,,,,56,,
+Plastic Film Capacitors,PF785,PART517,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Plastic Film Capacitors,PF786,PART518,https://www.syncpower.com/datasheet/SPN1012.pdf,65,,,,-,,,,,
+Plastic Film Capacitors,PF786,PART519,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Plastic Film Capacitors,PF786,PART520,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,99,,,,,
+Plastic Film Capacitors,PF786,PART521,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Plastic Film Capacitors,PF787,PART522,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,,,
+Plastic Film Capacitors,PF787,PART523,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,,,,-,,
+Plastic Film Capacitors,PF787,PART524,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,94,,,-,,
+Plastic Film Capacitors,PF788,PART525,https://www.syncpower.com/datasheet/SPN1012.pdf,,,,,85,,,,,

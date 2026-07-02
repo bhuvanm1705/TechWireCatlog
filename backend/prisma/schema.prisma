@@ -1,0 +1,56 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Category {
+  id            String        @id @default(uuid())
+  name          String        @unique
+  subcategories SubCategory[]
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model SubCategory {
+  id         String    @id @default(uuid())
+  name       String
+  categoryId String
+  category   Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  products   Product[]
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  @@unique([name, categoryId])
+}
+
+model Product {
+  id            String             @id @default(uuid())
+  partNumber    String             @unique
+  datasheetUrl  String?
+  subCategoryId String
+  subcategory   SubCategory        @relation(fields: [subCategoryId], references: [id], onDelete: Cascade)
+  attributes    ProductAttribute[]
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
+
+  @@index([subCategoryId])
+}
+
+model ProductAttribute {
+  id             String   @id @default(uuid())
+  productId      String
+  product        Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  attributeName  String
+  attributeValue String
+  isDash         Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([productId, attributeName])
+  @@index([productId])
+  @@index([attributeName])
+}
