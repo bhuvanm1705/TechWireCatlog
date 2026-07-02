@@ -1,4 +1,5 @@
 const prisma = require('../config/db');
+const { randomUUID } = require('crypto');
 
 /**
  * Imports products and dynamic specifications into the database within a transaction.
@@ -60,6 +61,7 @@ async function importProductData(productsData) {
       if (item.attributes && item.attributes.length > 0) {
         await tx.productAttribute.createMany({
           data: item.attributes.map(attr => ({
+            id: randomUUID(),
             productId: product.id,
             attributeName: attr.name,
             attributeValue: attr.value,
