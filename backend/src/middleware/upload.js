@@ -2,8 +2,10 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 
-// Ensure uploads folder exists
-const uploadDir = path.join(__dirname, '../../../uploads');
+const os = require('os');
+
+// Use system temp directory (e.g. /tmp) to support Vercel's read-only file systems
+const uploadDir = path.join(os.tmpdir(), 'techwire-uploads');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
