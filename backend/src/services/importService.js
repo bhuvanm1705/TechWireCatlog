@@ -9,13 +9,13 @@ const { randomUUID } = require('crypto');
 async function importProductData(productsData) {
   let importedCount = 0;
 
-  // Execute import inside a single Prisma transaction for database consistency
-  await prisma.$transaction(async (tx) => {
-    for (const item of productsData) {
-      if (!item.category || !item.subcategory || !item.partNumber) {
-        continue;
-      }
+  for (const item of productsData) {
+    if (!item.category || !item.subcategory || !item.partNumber) {
+      continue;
+    }
 
+    // Execute each product import steps within a small transaction to ensure consistency per-product
+    await prisma.$transaction(async (tx) => {
       // 1. Ensure Category exists
       const category = await tx.category.upsert({
         where: { name: item.category },
@@ -69,12 +69,10 @@ async function importProductData(productsData) {
           })),
         });
       }
+    });
 
-      importedCount++;
-    }
-  }, {
-    timeout: 30000, // 30 seconds timeout limit for transaction
-  });
+    importedCount++;
+  }
 
   return importedCount;
 }
